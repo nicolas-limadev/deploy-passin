@@ -26,6 +26,7 @@ services:
     #   - postgres
     networks:
       - passin
+      
 networks:
   passin:
     driver: bridge

@@ -23,9 +23,17 @@ spec:
         image: nicklimadev/passin-app:caa6d4a
         env:
         - name: DATABASE_URL
-          value:
+          valueFrom:
+            secretKeyRef:
+              name: db-connection
+              key: url
+
         - name: API_BASE_URL
-          value: "http://localhost:3333"
+          valueFrom: 
+            configMapKeyRef:
+              name: nlw-env
+              key: url
+              
         resources:
           requests:
             cpu: 200m
