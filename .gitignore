@@ -1,7 +1,6 @@
 node_modules
 .env
 k8s/secret.yaml
-k8s/configmap.yaml
 terraform.tfvars
 terraform.tfstate
 .terraform*
