@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: passin
-        image: nicklimadev/passin-app:d9b011c
+        image: nicklimadev/passin-app:a6144c8
         env:
         - name: DATABASE_URL
           valueFrom:
