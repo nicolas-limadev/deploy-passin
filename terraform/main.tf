@@ -1,5 +1,5 @@
 resource "digitalocean_database_db" "passin-db" {
-  cluster_id = digitalocean_database_cluster.postgres-example.id
+  cluster_id = digitalocean_database_cluster.passin-cluster.id
   name       = "passin-db"
 }
 
